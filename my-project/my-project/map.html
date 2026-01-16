@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Through the Heart of Exton</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+</head>
+<body>
+    <!-- Navbar Section -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="/" id="navbar__logo"><span class="logo-circle">E</span> EXTON</a>  
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+            <a href="/" class="navbar__links">Home</a>
+        </li>
+        <li class="navbar__item">
+            <a href="timeline.html" class="navbar__links">Timeline</a>
+        </li>
+        <li class="navbar__item">
+            <a href="map.html" class="navbar__links">Map of Exton</a>
+        </li>
+        <li class="navbar__item">
+            <a href="people.html" class="navbar__links">People</a>
+         </li> 
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+   <div class="main">
+    <div class="main__container">
+        <div class="main__content">
+            <h1>VIEW THE</h1>
+            <h2>MAP OF EXTON</h2>
+            <button class="main__btn"><a href="#map-container">Open Map</a></button>
+        </div>
+        <div class="main_image--container">
+            <img src="images/exton.png" alt="pic" id="main__img">
+        </div>
+    </div>
+   </div>
+
+   <!-- Map Section-->
+   <div class="maps-page" id="map-container">
+     <div class="page-container">
+       <div style="text-align: center; margin-bottom: 3rem;">
+         <h1 style="background-color: #ff8177; background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); background-size: 100%; -webkit-background-clip: text; -moz-background-clip: text; -webkit-text-fill-color: transparent; -moz-text-fill-color: transparent; font-size: 3rem; margin-bottom: 1rem;">Explore Exton</h1>
+         <p style="font-size: 1.125rem; color: #999; max-width: 800px; margin: 0 auto;">
+           Discover famous landmarks and key locations in the Exton area through our interactive map
+         </p>
+       </div>
+
+       <div class="map-section">
+         <div id="map" style="width: 100%; height: 600px; border-radius: 4px; margin-bottom: 3rem;"></div>
+
+         <div class="section-light">
+           <h3 id="location-count">Featured Locations</h3>
+           <div id="locations-grid" class="locations-grid"></div>
+         </div>
+
+         <div style="margin-top: 3rem; padding: 2rem; background-color: rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 4px; color: #fff;">
+           <h4 style="margin-bottom: 1rem; color: #fff;">Map Controls</h4>
+           <ul style="margin: 0; padding-left: 1.5rem; color: #e0e0e0; line-height: 1.8;">
+             <li>Click and drag to pan around the map</li>
+             <li>Use the +/- buttons or scroll to zoom in and out</li>
+             <li>Click on any marker to see location details</li>
+             <li>Click on location cards below to jump to that location</li>
+           </ul>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   <!-- Services Section-->
+    <div class="services">
+        <h1>See what the hype is about</h1>
+        <div class="services__container">
+            <div class="services__card">
+                <h2>Visualize Exton</h2>
+                <p>A fast-paced growing town</p>
+                <button><a href="map.html">Open Map</a></button>
+            </div>
+            <div class="services__card">
+                <h2>Timeline</h2>
+                <p>See the History of Exton</p>
+                <button><a href="timeline.html">Open Timeline</a></button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer Section -->
+     <div class="footer__container">
+        <div class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="/" id="footer__logo"><span class="logo-circle">E</span>EXTON</a>
+                </div>
+                <p class="website__rights">© EXTON LEGACY 2026. All rights reserved.</p>
+                <div class="social__icons">
+                    <a href="/" class="social__icon--link" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="/" class="social__icon--link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="/" class="social__icon--link" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="/" class="social__icon--link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="/" class="social__icon--link" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- Rotating Logos Section-->
+     <div class="rotating-logos">
+        <div class="rotating-logos__track">
+            <span class="logo-text">EXTON</span>
+            <span class="logo-text">LEGACY</span>
+            <span class="logo-text">HISTORY</span>
+            <span class="logo-text">TIMELINE</span>
+            <span class="logo-text">MAPS</span>
+            <span class="logo-text">ABOUT</span>
+        </div>
+     </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+
